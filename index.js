@@ -5,8 +5,6 @@ const bodyParser = require('body-parser')
 const sqlite = require('sqlite')
 const dbConnection = sqlite.open('banco.sqlite', { Promise })
 
-const port = process.env.PORT || 3000
-
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -129,8 +127,9 @@ const init = async() => {
 } 
 
 init()
+// comment
 
-app.listen(port, (err) => {
+app.listen(3000, (err) => {
     if(err){
         console.log("Nao foi possivel iniciar o servidor do Jobify.")
     }else{
