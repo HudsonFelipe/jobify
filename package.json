@@ -4,7 +4,7 @@
   "description": "jobify is a boarding a simple job board for site.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Hudson Felipe",
   "license": "MIT",
